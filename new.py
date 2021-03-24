@@ -50,16 +50,11 @@ while allBlackPoints != []:
 
         coordinates = allBlackPoints[desireIndex]
 
-        
         mouse.position = (coordinates[0] + 5, coordinates[1] + 144)
         mouse.click(Button.left)
 
-
         firstX = allBlackPoints[desireIndex][0]
         firstY = allBlackPoints[desireIndex][1]
-
-        print(f'x: {firstX}')
-        print(f'y: {firstY + 144}')
 
         allBlackPoints[desireIndex] = ''
     except:
